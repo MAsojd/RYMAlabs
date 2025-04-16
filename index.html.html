@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RYMA Laboratories</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #243447;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #1c2a38;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #243447;
+    }
+    footer {
+      text-align: center;
+      background-color: #e1e5eb;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RYMA Laboratories</h1>
+    <p>Independent Weather & Space Research from the Finger Lakes</p>
+  </header>
+  <nav>
+    <a href="#weather">Weather Logs</a>
+    <a href="#astronomy">Astronomy Notes</a>
+    <a href="#journal">RYMA Journal</a>
+    <a href="#photos">Photos</a>
+    <a href="#about">About</a>
+    <a href="file:///C:/Users/mocon/OneDrive/Desktop/ryma-labs/public/observes.html" class="button">View Data</a>
+    <a href="file:///C:/Users/mocon/OneDrive/Desktop/ryma-labs/Login.html" class="button">Login</a>
+  </nav>
+  <main>
+    <section>
+    <section id="alertBox">
+      <h2>⚠️ RYMA Lab Alerts</h2>
+      <p id="alertMessage">No current alerts.</p>
+    </section>
+    
+    <script>
+      const alertBox = document.getElementById('alertMessage');
+      const storedAlert = localStorage.getItem('rymaAlert');
+      if (storedAlert) {
+        alertBox.textContent = storedAlert;
+      }
+    </script>
+    </section>
+    <section id="weather">
+      <h2>Weather</h2>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/42d87n76d99/geneva/?unit=us" data-label_1="Finger Lakes" data-label_2="WEATHER" data-theme="original" >Finger Lakes WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+      <h2>Radar</h2>
+      <iframe width="650" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=°F&metricWind=default&zoom=9&overlay=radar&product=radar&level=surface&lat=42.637&lon=-76.988&detailLat=42.77000608876619&detailLon=-76.52986649054326&marker=true" frameborder="0"></iframe>
+      <h2>Weather Logs</h2>
+      <p>Observations of storms, rainfall, wind, and temperature.</p>
+    </section>
+
+    <section id="astronomy">
+      <h2>Astronomy Notes</h2>
+      <p>Tracking celestial events, meteor showers, and skywatching conditions.</p>
+    </section>
+
+    <section id="journal">
+      <h2>RYMA Journal</h2>
+      <p>My thoughts, research summaries, and projects.</p>
+      <article>
+        <h3>April 8, 2024 - Total Solar Eclipse</h3>
+        <h4>Location: Finger Lakes Region, New York</h4>
+        <h4>Time Observed: 14:05 - 15:25 EST (Totality at ~15:20)</h4>
+        <h4>Sky Conditions: Clear skies with occasional high cirrus clouds</h4>
+        <h4>Solar Data: Moon's apparent diameter ~3.5% larger than Sun's at eclipse time</h4>
+        <h4>Equipment: Eclipse glasses (ISO-certified), 10x50 binoculars with solar filters, phone camera with solar filter, field notebook</h4>
+        <p>On April 8th, 2024, a rare and extraordinary total solar eclipse swept across Upstate New York, plunging the Finger Lakes region into a surreal midday twilight for nearly four minutes. This celestial alignment—when the Moon passed directly between the Earth and the Sun—offered one of the most dramatic astronomical experiences in modern memory for local observers.
+
+          From my viewing site at the tip of Seneca Lake, the eclipse began at approximately 14:05, with a noticeable temperature drop and shifting light quality even before totality. As the Moon's shadow advanced, wildlife quieted, and an eerie calm fell over the landscape.
+          
+          At 15:20, the Sun was fully obscured, and the solar corona became visible—a radiant, wispy halo surrounding the black disk of the Moon. Several prominences and chromospheric arcs were also visible in shades of red and violet, silhouetted around the lunar limb. The visual contrast between the diamond ring effect and the deepening twilight made the totality phase emotionally and scientifically profound.
+          
+          Key Observations:
+        
+          Local temperature dropped by an estimated 10°F during totality
+          The umbra's edge was sharply defined on the western horizon
+          Corona shape was asymmetrical, consistent with solar minimum conditions
+          Shadow bands faintly visible on white surfaces before and after totality
+          
+          This event was part of Saros Cycle 139, and will not return to the Finger Lakes region for centuries. As both a visual spectacle and an atmospheric science opportunity, this eclipse underscored the power of solar dynamics and their impact on Earth-based observers.</p>
+      </article>
+      <article>
+        <h3>October 10, 2024 - Auroral Event</h3>
+        <h4>Location: Finger Lakes Region, New York</h4>
+        <h4>Time Observed: 21:50 - 22:41</h4>
+        <h4>Sky Conditions: Mostly Clear, low humidity, visibility excellent</h4>
+        <h4>Solar Data: KP Index 6.33, moderate geomagnetic storm</h4>
+        <h4>Equipment: Visual observation, phone camera, Google maps, compass, field notes</h4>
+        <p>On the evening of October 10th, 2024, the skies above the Finger Lakes region were graced by a vivid and rare display of aurora borealis—a phenomenon not frequently observed at this latitude. The event was driven by a moderate G2-class geomagnetic storm, stemming from a coronal mass ejection (CME) that impacted Earth's magnetosphere roughly 36 hours prior.
+            On the outskirts of the Village of Waterloo , I was able to witness dynamic pink and green auroral bands stretching across the northern horizon, slowly waving and pulsing in response to solar wind interactions. The green hues, caused by excited oxygen atoms around 100 km above Earth, were especially prominent in the lower sky, while the fainter pinks—likely due to nitrogen excitation—danced higher in the atmosphere in delicate curtains.
+            
+            This occurrence aligns with recent increases in solar activity as the sun approaches Solar Maximum (Cycle 25), expected around 2025. The event marked not only a visual spectacle, but a valuable data point for local auroral visibility and solar-terrestrial interaction in upstate New York.
+
+            Key Observations:
+            
+            Auroral onset was visible to the naked eye without aid
+            Colors remained stable for over an hour, fluctuating in brightness
+            No photographic filters used—images captured closely resembled the visual experience
+            KP index readings were unusually high for mid-latitudes, peaking above 7
+            Minor interference with amateur radio reported locally
+            This event underscores the importance of ongoing space weather monitoring and the value of regional citizen science.</p>
+      </article>
+    
+    </section>
+
+    <section id="photos">
+      <h2>Photos</h2>
+      <p>Images from storms, sky phenomena, and telescope captures.</p>
+      <img src="C:\Users\mocon\OneDrive\Desktop\ryma-labs\images/PXL_20241011_020005595.NIGHT.jpg" alt="Aurora 1" width="300">
+      <img src="C:\Users\mocon\OneDrive\Desktop\ryma-labs\images/PXL_20241011_020206089.NIGHT.jpg" alt="Aurora 2" width="300">
+      <img src="C:\Users\mocon\OneDrive\Desktop\ryma-labs\images/PXL_20241011_020500585.NIGHT.jpg" alt="Aurora 3" width="300" height="169">
+      <img src="C:\Users\mocon\OneDrive\Desktop\ryma-labs\images/PXL_20241011_023105205.NIGHT.jpg" alt="Aurora 4" width="300">
+      <img src="C:\Users\mocon\OneDrive\Desktop\ryma-labs\images/PXL_20240408_192238377.PORTRAIT.jpg" alt="Eclipse 1" width="200" height="400">
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>RYMA Laboratories began as a 3rd grade science dream. Now it's a space for real science in the Finger Lakes region of New York. Run by a 16 year old aspiring scientist. RYMA Laboratories aims to provide local, and relevent weather and space data. Although I lack the equipment and expertise, I am constantly learning new things and aiming to obtain better and more precise data. RYMA Laboratories is an independent laboratory run by an independent scientist.</p>
+    </section>
+
+  </main>
+  <footer>
+    <p>2025 RYMA Laboratories.</p>
+  </footer>
+</body>
+</html>
